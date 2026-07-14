@@ -7,6 +7,77 @@
 
 <style>
 body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0d0d0d;
+    color:white;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    color:#ffcc00;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+.login-btn{
+    background:#ffcc00;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:70px;
+    color:#ffcc00;
+}
+
+.hero p{
+    font-size:24px;
+    margin:20px 0;
+}
+
+.buy-btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:#ffcc00;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+} 
 margin:0;
 font-family:Arial,sans-serif;
 background:#111;
@@ -64,6 +135,27 @@ background:#ffa000;
 <header>
 🎮 aiofx şop
 </header>
+  <header class="navbar">
+  <div class="logo">AIOFX SHOP</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">UC</a>
+    <a href="#">Top Up</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <button class="login-btn">Login</button>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>AIOFX SHOP</h1>
+    <p>Fast • Safe • Game Top Up</p>
+
+    <a href="#uc" class="buy-btn">BUY UC NOW</a>
+  </div>
+</section>
 
 <h2>Ən Sərfəli UC Paketləri Yalniz Bizdə</h2>
 
